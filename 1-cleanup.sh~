@@ -7,8 +7,6 @@
 ########################################################
 
 # SCRIPT VARIABLES
-# This assumes that Ubuntu was installed using “drupalpro” as the user name.
-WWWOwner="drupalpro" 
 OPT_APTGET="-y"                     # APT-GET options
 
 ##
@@ -117,10 +115,10 @@ Exec=firefox http://www.goingdrupal.com/drupalpro
 Name=Drupalpro14 Documentation
 Comment=Link to Drupalpro14 Documentation
 Icon=firefox
-' >> "/home/$WWWOwner/Desktop/DrupalPro14.desktop"
+' >> '/home/gareth/Desktop/DrupalPro14.desktop'
 
-sudo chmod +x /home/$WWWOwner/Desktop/DrupalPro14.desktop
+sudo chmod +x /home/gareth/Desktop/DrupalPro14.desktop
 
-sudo desktop-file-install /home/$WWWOwner/Desktop/DrupalPro14.desktop
+sudo desktop-file-install /home/gareth/Desktop/DrupalPro14.desktop
 
 

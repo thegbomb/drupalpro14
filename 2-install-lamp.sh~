@@ -8,7 +8,7 @@
 WWWOwner="drupalpro"                # user
 WWWGroup="www-data"                 # apache group
 DIRHome="/home/$WWWOwner"           # user home path
-DIRwww="$DIRHome/websites"          # path to website projects directory
+DIRwww="/var/www/vhosts"            # path to website projects directory
 VER_GEANY_SCHEMES="1.22"            # Version of colorschemes for geany
 OPT_APTGET="-y"                     # APT-GET options
 

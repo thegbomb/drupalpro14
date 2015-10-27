@@ -10,9 +10,4 @@ bash 3-install-miscellaneous.sh
 
 bash 4-install-netbeans.sh
 
-bash 4a-install-dev-apps.sh
-
 bash 5-install-drush.sh
-
-bash 5a-install-xdebug.sh
-
