@@ -138,7 +138,7 @@ ll
 This will list the files and where they link to." > "${CONFIGS}/README.txt"
 
 # Setup websites directory
-sudo -u $WWWOwner -g $WWWGroup mkdir -p $DIRwww
+mkdir -p $DIRwww
 sudo chown -R $WWWOwner:$WWWGroup $DIRwww
 sudo chmod -R 2775 $DIRwww
 sudo chmod g+s $DIRwww
