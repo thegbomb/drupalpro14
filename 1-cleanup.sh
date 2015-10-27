@@ -70,6 +70,10 @@ sudo apt-get $OPT_APTGET purge sane-utils simple-scan libsane libsane-hpaio
 
 sudo apt-get $OPT_APTGET purge thunderbird*
 
+# remove packages that are extra
+# @TODO doublecheck these need to be removed
+sudo apt-get $OPT_APTGET purge eog unity-lens-photos account-plugin-flickr unity-scope-drive totem totem-plugins totem-mozilla cheese brasero brasero-cdrkit gnome-media gnome-orca onboard
+
 # remove packages that were automatically installed to satisfy dependencies for other packages and are now no longer needed.
 
 sudo apt-get $OPT_APTGET autoremove 
