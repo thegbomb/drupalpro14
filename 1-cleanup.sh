@@ -24,7 +24,7 @@ sudo apt-get autoremove
 sudo apt-get $OPT_APTGET purge libreoffice-gnome  libreoffice-draw  libreoffice-help-en-us  libreoffice-style-tango  libreoffice-impress  libreoffice-math  libreoffice-gtk  libreoffice-common  uno-libs3  python-uno  libreoffice-style-human  ure  libreoffice-base-core  libreoffice-calc  libreoffice-emailmerge  libreoffice-core libreoffice-writer
 
 #  18mb - Games
-sudo apt-get $OPT_APTGET purge aisleriot gnome-sudoku mahjongg gnomine
+sudo apt-get $OPT_APTGET purge aisleriot gnome-sudoku mahjongg gnome-mahjongg gnomine
 
 #   6mb - Bluetooth
 sudo apt-get $OPT_APTGET purge bluez-alsa gir1.2-gnomebluetooth-1.0 bluez-gstreamer pulseaudio-module-bluetooth bluez-cups bluez gnome-bluetooth gnome-user-share

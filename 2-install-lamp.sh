@@ -57,18 +57,17 @@ sudo php5enmod uploadprogress
 #
 # Commented out because it failed to restart apache. Needs a fix.
 #
-git clone https://github.com/gregrickaby/The-Perfect-Apache-Configuration.git perfect_apache_config
-sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.original
-sudo mv perfect_apache_config/http.conf /etc/apache2/apache2.conf
-sudo chown root:root /etc/apache2/apache2.conf
-sudo rm -rf perfect_apache_config
+#git clone https://github.com/gregrickaby/The-Perfect-Apache-Configuration.git perfect_apache_config
+#sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.original
+#sudo mv perfect_apache_config/http.conf /etc/apache2/apache2.conf
+#sudo chown root:root /etc/apache2/apache2.conf
+#sudo rm -rf perfect_apache_config
 
 # Stops Apache complaining about not knowing the FQDN
 echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
 sudo a2enconf fqdn.conf
 sudo a2enmod ssl
 sudo a2enmod rewrite
-sudo a2enmod mod_deflate
 sudo a2dismod cgi
 sudo a2dismod autoindex
 
