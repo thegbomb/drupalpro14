@@ -71,7 +71,7 @@ sudo apt-get $OPT_APTGET purge thunderbird*
 
 # remove packages that were automatically installed to satisfy dependencies for other packages and are now no longer needed.
 
-sudo apt-get autoremove 
+sudo apt-get $OPT_APTGET autoremove 
 
 # clear out the local repository of retrieved package files. It removes everything but the lock file from /var/cache/apt/archives/ and /var/cache/apt/archives/partial/.
 
@@ -92,7 +92,7 @@ sudo apt-get $OPT_APTGET purge unity-webapps-common
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 # Get back your menu bars.
-sudo apt-get autoremove appmenu-gtk appmenu-gtk3 appmenu-qt
+sudo apt-get $OPT_APTGET autoremove appmenu-gtk appmenu-gtk3 appmenu-qt
 
 # Show username on panel.
 gsettings set com.canonical.indicator.session show-real-name-on-panel true
