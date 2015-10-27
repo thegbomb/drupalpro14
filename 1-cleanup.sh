@@ -13,6 +13,7 @@ OPT_APTGET="-y"                     # APT-GET options
 
 ##
 # UPDATE UBUNTU 14.04
+sudo apt-key update
 sudo apt-get update
 sudo apt-get $OPT_APTGET upgrade
 
